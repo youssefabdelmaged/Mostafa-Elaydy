@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Deploy your websites in less than 60 seconds."
+    />
+    <meta
+      property="og:title"
+      content="Moshify - Deploy your websites in less than 60 seconds."
+    />
+    <meta
+      property="og:description"
+      content="Moshify is an imginary cloud hosting company. It's designed to teach people how to build modern websites using HTML5 and CSS3. To learn how to build this website from scratch, get the Ultimate HTML and CSS course on codewithmosh.com."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://moshified.com/moshify.jpg" />
+    <meta property="og:url" content="http://moshified.com" />
+    <title>Mostafa Elaydy</title>
+    <link rel="icon" href="images/favicon-sm.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon-md.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon-lg.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <form action="https://formspree.io/f/mayzeyeg" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b7ba78db53.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      let index1 = 0;
+      let image = document.getElementById("image");
+      let images = [
+        "images/image6.png",
+        "images/image7.png",
+        "images/image8.png",
+        "images/image9.png",
+        "images/image10.png",
+      ];
+      setInterval(function () {
+        image.src = images[index1];
+        index1 > 3 ? (index1 = 0) : index1++;
+      }, 2000);
+    </script>
+
+    <script type="text/javascript">
+      let index2 = 0;
+      let image2 = document.getElementById("image2");
+      let images2 = [
+        "images/image1.png",
+        "images/image2.png",
+        "images/image3.png",
+        "images/image4.png",
+        "images/image5.png",
+      ];
+      setInterval(function () {
+        image2.src = images2[index2];
+        index2 > 3 ? (index2 = 0) : index2++;
+      }, 2000);
+    </script>
+
+    <script type="text/javascript">
+      let index3 = 0;
+      let image3 = document.getElementById("image3");
+      let images3 = [
+        "images/image11.png",
+        "images/image12.png",
+        "images/image13.png",
+        "images/image14.png",
+      ];
+      setInterval(function () {
+        image3.src = images3[index3];
+        index3 > 2 ? (index3 = 0) : index3++;
+      }, 2000);
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
