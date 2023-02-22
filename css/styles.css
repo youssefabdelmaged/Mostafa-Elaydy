@@ -364,7 +364,7 @@ a {
   border: 2px solid rgb(8, 15, 72);
   border-radius: 9px;
   background: white;
-  border-color: rgb(117, 12, 143);
+  border-color: #7B9CC8;
   outline: none;
 }
 .block-form-part2 .input__radio{
@@ -372,8 +372,8 @@ a {
 
 }
 .input__radio:checked {
-  border-color: rgb(175, 93, 195);
-  background: rgb(175, 93, 195);
+  border-color: #7EB0D0;
+  background: #7EB0D0;
 }
 
 .input__radio-lable {
@@ -1144,9 +1144,9 @@ a:active {
 /* form */
 
 .border-animation {
-  background-color: rgb(81, 19, 110);
+  background-color: #191818;
   border-radius: 12px;
-  box-shadow: 16px 14px 20px rgb(87, 0, 78);
+  box-shadow: 16px 14px 20px #262424;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1160,7 +1160,7 @@ a:active {
   align-items: center;
   justify-content: center;
   content: "";
-  background-image: conic-gradient(rgb(251, 255, 19) 20deg, transparent 120deg);
+  background-image: conic-gradient(#7EB0D0 20deg, transparent 120deg);
   border-radius: 12px;
   width: 150%;
   height: 150%;
@@ -1168,8 +1168,8 @@ a:active {
   animation: rotate 8s linear infinite;
 }
 .border-animation .form-span {
-  background-color: rgb(81, 19, 110);
-  box-shadow: inset 16px 14px 20px rgb(87, 0, 78);
+  background-color: #191818;
+  box-shadow: inset 16px 14px 20px #191818;
   position: absolute;
   z-index: 1;
   width: 98%;
@@ -1256,7 +1256,7 @@ a:active {
 
 .block-form-part2 .input__radio:checked {
   /* border-color: rgb(175, 93, 195); */
-  background: #549eff;
+  background: #7EB0D0;
 }
 .block-form-part2 .border-animation {
   height: 80rem;
