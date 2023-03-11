@@ -84,20 +84,19 @@
                 />
               </div>
 
-              <div class="input-group" lang="ar">
+              <div class="input-group">
                 <span class="icon-container">
                   <svg class="icon icon--primary">
                     <use xlink:href="images/sprite3.svg#whatsapp"></use>
                   </svg>
                 </span>
-                <input
+                <input  
                   class="input"
                   name="Whatsapp Number"
                   type="text"
                   placeholder="Whatsapp Number"
                   required
-                  lang="ar"
-                  id="whatsapp-number-input"
+                  id="Whatsapp"
                 />
               </div>
 
@@ -138,9 +137,10 @@
                 <input
                   class="input"
                   name="Age"
-                  type="number"
+                  type="text"
                   placeholder="Age"
                   required
+                  id="age"
                 />
               </div>
 
@@ -153,10 +153,11 @@
                 <input
                   class="input"
                   name="Weight"
-                  type="number"
+                  type="text"
                   placeholder="Weight"
                   required
                   step="any"
+                  id="weight"
                 />
               </div>
 
@@ -479,174 +480,75 @@
       ></script>
       
       <script>
-        const x1 = document.getElementById('x1');
-      
-        x1.addEventListener('input', function(event) {
-          // Remove any non-numeric characters from the input
-          const input = event.target.value.replace(/\D/g,'');
-          // Update the input field with the cleaned input
-          event.target.value = input;
-        });
-      
-        x1.addEventListener('change', function(event) {
-          // Validate the input
-          const input = event.target.value;
-          if (!input || !/^\d+$/.test(input)) {
-            alert('Please enter a valid Whatsapp number');
-            event.target.value = '';
-            event.preventDefault();
-          }
-        });
-      </script>
-        
-     <script>
-  const whatsappNumberInput = document.getElementById('whatsapp-number-input');
+        const Whatsapp= document.getElementById('Whatsapp');
 
-  whatsappNumberInput.addEventListener('input', function(event) {
-    // Remove any non-numeric characters from the input
-    const input = event.target.value.replace(/\D/g,'');
-    // Update the input field with the cleaned input
-    event.target.value = input;
-  });
+        Whatsapp.addEventListener('input', function(event) {
+          // Remove any non-Arabic or non-English digits or decimal points from the input
+          const input = event.target.value.replace(/[^\u0660-\u0669\u06F0-\u06F90-9.,\s]+/g, '');
+          // Replace any Arabic decimal points with English decimal points
+          const inputWithEnglishDecimal = input.replace(/[\u066B]/g, '.');
+          // Update the input field with the cleaned input
+          event.target.value = inputWithEnglishDecimal;
+        });
+        
+        Whatsapp.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^[\u0660-\u0669\u06F0-\u06F90-9.,\s]+$/.test(input)) {
+            alert('Please enter a valid age');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });        
+      </script>   
 
-  whatsappNumberInput.addEventListener('change', function(event) {
-    // Validate the input
-    const input = event.target.value;
-    if (!input || !/^\d+$/.test(input)) {
-      alert('Please enter a valid Whatsapp number');
-      event.target.value = '';
-      event.preventDefault();
-    }
-  });
-</script>
-        
-      <script>
-        const x3 = document.getElementById('whatsapp-number-input');
-      
-        x3.addEventListener('input', function(event) {
-          // Remove any non-numeric characters from the input
-          const input = event.target.value.replace(/\D/g,'');
-          // Update the input field with the cleaned input
-          event.target.value = input;
-        });
-      
-        x3.addEventListener('change', function(event) {
-          // Validate the input
-          const input = event.target.value;
-          if (!input || !/^\d+$/.test(input)) {
-            alert('Please enter a valid Whatsapp number');
-            event.target.value = '';
-            event.preventDefault();
-          }
-        });
-      </script>
 
-        
       <script>
-        const x4 = document.getElementById('whatsapp-number-input');
-      
-        x4.addEventListener('input', function(event) {
-          // Remove any non-numeric characters from the input
-          const input = event.target.value.replace(/\D/g,'');
-          // Update the input field with the cleaned input
-          event.target.value = input;
-        });
-      
-        x4.addEventListener('change', function(event) {
-          // Validate the input
-          const input = event.target.value;
-          if (!input || !/^\d+$/.test(input)) {
-            alert('Please enter a valid Whatsapp number');
-            event.target.value = '';
-            event.preventDefault();
-          }
-        });
-      </script>
-        
-      <script>
-        const x5 = document.getElementById('whatsapp-number-input');
-      
-        x5.addEventListener('input', function(event) {
-          // Remove any non-numeric characters from the input
-          const input = event.target.value.replace(/\D/g,'');
-          // Update the input field with the cleaned input
-          event.target.value = input;
-        });
-      
-        x5.addEventListener('change', function(event) {
-          // Validate the input
-          const input = event.target.value;
-          if (!input || !/^\d+$/.test(input)) {
-            alert('Please enter a valid Whatsapp number');
-            event.target.value = '';
-            event.preventDefault();
-          }
-        });
-      </script>
-        
-      <script>
-        const x6 = document.getElementById('whatsapp-number-input');
-      
-        x6.addEventListener('input', function(event) {
-          // Remove any non-numeric characters from the input
-          const input = event.target.value.replace(/\D/g,'');
-          // Update the input field with the cleaned input
-          event.target.value = input;
-        });
-      
-        x6.addEventListener('change', function(event) {
-          // Validate the input
-          const input = event.target.value;
-          if (!input || !/^\d+$/.test(input)) {
-            alert('Please enter a valid Whatsapp number');
-            event.target.value = '';
-            event.preventDefault();
-          }
-        });
-      </script>
-        
-      <script>
-        const x7 = document.getElementById('whatsapp-number-input');
-      
-        x7.addEventListener('input', function(event) {
-          // Remove any non-numeric characters from the input
-          const input = event.target.value.replace(/\D/g,'');
-          // Update the input field with the cleaned input
-          event.target.value = input;
-        });
-      
-        x7.addEventListener('change', function(event) {
-          // Validate the input
-          const input = event.target.value;
-          if (!input || !/^\d+$/.test(input)) {
-            alert('Please enter a valid Whatsapp number');
-            event.target.value = '';
-            event.preventDefault();
-          }
-        });
-      </script>
+        const age= document.getElementById('age');
 
-        
-      <script>
-        const x8 = document.getElementById('whatsapp-number-input');
-      
-        x8.addEventListener('input', function(event) {
-          // Remove any non-numeric characters from the input
-          const input = event.target.value.replace(/\D/g,'');
+        age.addEventListener('input', function(event) {
+          // Remove any non-Arabic or non-English digits or decimal points from the input
+          const input = event.target.value.replace(/[^\u0660-\u0669\u06F0-\u06F90-9.,\s]+/g, '');
+          // Replace any Arabic decimal points with English decimal points
+          const inputWithEnglishDecimal = input.replace(/[\u066B]/g, '.');
           // Update the input field with the cleaned input
-          event.target.value = input;
+          event.target.value = inputWithEnglishDecimal;
         });
-      
-        x8.addEventListener('change', function(event) {
+        
+        age.addEventListener('change', function(event) {
           // Validate the input
           const input = event.target.value;
-          if (!input || !/^\d+$/.test(input)) {
-            alert('Please enter a valid Whatsapp number');
+          if (!input || !/^[\u0660-\u0669\u06F0-\u06F90-9.,\s]+$/.test(input)) {
+            alert('Please enter a valid age');
             event.target.value = '';
             event.preventDefault();
           }
+        });        
+      </script>   
+
+      <script>
+        const weight= document.getElementById('weight');
+
+        weight.addEventListener('input', function(event) {
+          // Remove any non-Arabic or non-English digits or decimal points from the input
+          const input = event.target.value.replace(/[^\u0660-\u0669\u06F0-\u06F90-9.,\s]+/g, '');
+          // Replace any Arabic decimal points with English decimal points
+          const inputWithEnglishDecimal = input.replace(/[\u066B]/g, '.');
+          // Update the input field with the cleaned input
+          event.target.value = inputWithEnglishDecimal;
         });
-      </script>
+        
+        weight.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^[\u0660-\u0669\u06F0-\u06F90-9.,\s]+$/.test(input)) {
+            alert('Please enter a valid weight');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });        
+      </script>   
+       
     <!-- </html> -->
   </body>
 </html>
