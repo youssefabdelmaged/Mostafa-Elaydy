@@ -93,12 +93,11 @@
                 <input
                   class="input"
                   name="Whatsapp Number"
-                  type="number"
+                  type="text"
                   placeholder="Whatsapp Number"
                   required
                   lang="ar"
-                  pattern="\d+"
-                  inputmode="numeric"
+                  id="whatsapp-number-input"
                 />
               </div>
 
@@ -462,7 +461,6 @@
               type="send"
               value="send"
               class="btn btn--white btn--stretched"
-              data-aos="fade-up"
             >
               Submit
             </button>
@@ -479,6 +477,176 @@
         src="https://kit.fontawesome.com/b7ba78db53.js"
         crossorigin="anonymous"
       ></script>
+      
+      <script>
+        const x1 = document.getElementById('x1');
+      
+        x1.addEventListener('input', function(event) {
+          // Remove any non-numeric characters from the input
+          const input = event.target.value.replace(/\D/g,'');
+          // Update the input field with the cleaned input
+          event.target.value = input;
+        });
+      
+        x1.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^\d+$/.test(input)) {
+            alert('Please enter a valid Whatsapp number');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });
+      </script>
+        
+     <script>
+  const whatsappNumberInput = document.getElementById('whatsapp-number-input');
+
+  whatsappNumberInput.addEventListener('input', function(event) {
+    // Remove any non-numeric characters from the input
+    const input = event.target.value.replace(/\D/g,'');
+    // Update the input field with the cleaned input
+    event.target.value = input;
+  });
+
+  whatsappNumberInput.addEventListener('change', function(event) {
+    // Validate the input
+    const input = event.target.value;
+    if (!input || !/^\d+$/.test(input)) {
+      alert('Please enter a valid Whatsapp number');
+      event.target.value = '';
+      event.preventDefault();
+    }
+  });
+</script>
+        
+      <script>
+        const x3 = document.getElementById('whatsapp-number-input');
+      
+        x3.addEventListener('input', function(event) {
+          // Remove any non-numeric characters from the input
+          const input = event.target.value.replace(/\D/g,'');
+          // Update the input field with the cleaned input
+          event.target.value = input;
+        });
+      
+        x3.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^\d+$/.test(input)) {
+            alert('Please enter a valid Whatsapp number');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });
+      </script>
+
+        
+      <script>
+        const x4 = document.getElementById('whatsapp-number-input');
+      
+        x4.addEventListener('input', function(event) {
+          // Remove any non-numeric characters from the input
+          const input = event.target.value.replace(/\D/g,'');
+          // Update the input field with the cleaned input
+          event.target.value = input;
+        });
+      
+        x4.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^\d+$/.test(input)) {
+            alert('Please enter a valid Whatsapp number');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });
+      </script>
+        
+      <script>
+        const x5 = document.getElementById('whatsapp-number-input');
+      
+        x5.addEventListener('input', function(event) {
+          // Remove any non-numeric characters from the input
+          const input = event.target.value.replace(/\D/g,'');
+          // Update the input field with the cleaned input
+          event.target.value = input;
+        });
+      
+        x5.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^\d+$/.test(input)) {
+            alert('Please enter a valid Whatsapp number');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });
+      </script>
+        
+      <script>
+        const x6 = document.getElementById('whatsapp-number-input');
+      
+        x6.addEventListener('input', function(event) {
+          // Remove any non-numeric characters from the input
+          const input = event.target.value.replace(/\D/g,'');
+          // Update the input field with the cleaned input
+          event.target.value = input;
+        });
+      
+        x6.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^\d+$/.test(input)) {
+            alert('Please enter a valid Whatsapp number');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });
+      </script>
+        
+      <script>
+        const x7 = document.getElementById('whatsapp-number-input');
+      
+        x7.addEventListener('input', function(event) {
+          // Remove any non-numeric characters from the input
+          const input = event.target.value.replace(/\D/g,'');
+          // Update the input field with the cleaned input
+          event.target.value = input;
+        });
+      
+        x7.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^\d+$/.test(input)) {
+            alert('Please enter a valid Whatsapp number');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });
+      </script>
+
+        
+      <script>
+        const x8 = document.getElementById('whatsapp-number-input');
+      
+        x8.addEventListener('input', function(event) {
+          // Remove any non-numeric characters from the input
+          const input = event.target.value.replace(/\D/g,'');
+          // Update the input field with the cleaned input
+          event.target.value = input;
+        });
+      
+        x8.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^\d+$/.test(input)) {
+            alert('Please enter a valid Whatsapp number');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });
+      </script>
     <!-- </html> -->
   </body>
 </html>
