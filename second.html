@@ -170,10 +170,11 @@
                 <input
                   class="input"
                   name="Height"
-                  type="number"
+                  type="text"
                   placeholder="Height (Cm)"
                   required
                   step="any"
+                  id="height"
                 />
               </div>
 
@@ -186,10 +187,11 @@
                 <input
                   class="input"
                   name="Neck (cm)"
-                  type="number"
+                  type="text"
                   placeholder="Neck (Cm)"
                   required
                   step="any"
+                  id="neck"
                 />
               </div>
 
@@ -202,10 +204,11 @@
                 <input
                   class="input"
                   name="Waist (cm)"
-                  type="number"
+                  type="text"
                   placeholder="Waist (Cm)"
                   required
                   step="any"
+                  id="waist"
                 />
               </div>
 
@@ -218,10 +221,11 @@
                 <input
                   class="input"
                   name="Arm (cm)"
-                  type="number"
+                  type="text"
                   placeholder="Arm (Cm)"
                   required
                   step="any"
+                  id="arm"
                 />
               </div>
             </div>
@@ -449,9 +453,10 @@
                   <input
                     class="input"
                     name="How Many Days You Want to Train in Week ?"
-                    type="number"
+                    type="text"
                     placeholder="Days (1-6)"
                     required
+                    id="days"
                   />
                 </div>
               </div>
@@ -549,6 +554,121 @@
         });        
       </script>   
        
+
+      <script>
+        const height= document.getElementById('height');
+
+        height.addEventListener('input', function(event) {
+          // Remove any non-Arabic or non-English digits or decimal points from the input
+          const input = event.target.value.replace(/[^\u0660-\u0669\u06F0-\u06F90-9.,\s]+/g, '');
+          // Replace any Arabic decimal points with English decimal points
+          const inputWithEnglishDecimal = input.replace(/[\u066B]/g, '.');
+          // Update the input field with the cleaned input
+          event.target.value = inputWithEnglishDecimal;
+        });
+        
+        height.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^[\u0660-\u0669\u06F0-\u06F90-9.,\s]+$/.test(input)) {
+            alert('Please enter a valid height');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });        
+      </script>   
+
+      <script>
+        const neck= document.getElementById('neck');
+
+        neck.addEventListener('input', function(event) {
+          // Remove any non-Arabic or non-English digits or decimal points from the input
+          const input = event.target.value.replace(/[^\u0660-\u0669\u06F0-\u06F90-9.,\s]+/g, '');
+          // Replace any Arabic decimal points with English decimal points
+          const inputWithEnglishDecimal = input.replace(/[\u066B]/g, '.');
+          // Update the input field with the cleaned input
+          event.target.value = inputWithEnglishDecimal;
+        });
+        
+        neck.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^[\u0660-\u0669\u06F0-\u06F90-9.,\s]+$/.test(input)) {
+            alert('Please enter a valid neck');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });        
+      </script>   
+
+      <script>
+        const waist= document.getElementById('waist');
+
+        waist.addEventListener('input', function(event) {
+          // Remove any non-Arabic or non-English digits or decimal points from the input
+          const input = event.target.value.replace(/[^\u0660-\u0669\u06F0-\u06F90-9.,\s]+/g, '');
+          // Replace any Arabic decimal points with English decimal points
+          const inputWithEnglishDecimal = input.replace(/[\u066B]/g, '.');
+          // Update the input field with the cleaned input
+          event.target.value = inputWithEnglishDecimal;
+        });
+        
+        waist.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^[\u0660-\u0669\u06F0-\u06F90-9.,\s]+$/.test(input)) {
+            alert('Please enter a valid waist');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });        
+      </script>     
+
+      <script>
+        const arm= document.getElementById('arm');
+
+        arm.addEventListener('input', function(event) {
+          // Remove any non-Arabic or non-English digits or decimal points from the input
+          const input = event.target.value.replace(/[^\u0660-\u0669\u06F0-\u06F90-9.,\s]+/g, '');
+          // Replace any Arabic decimal points with English decimal points
+          const inputWithEnglishDecimal = input.replace(/[\u066B]/g, '.');
+          // Update the input field with the cleaned input
+          event.target.value = inputWithEnglishDecimal;
+        });
+        
+        arm.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^[\u0660-\u0669\u06F0-\u06F90-9.,\s]+$/.test(input)) {
+            alert('Please enter a valid arm');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });        
+      </script>     
+
+      <script>
+        const days= document.getElementById('days');
+
+        days.addEventListener('input', function(event) {
+          // Remove any non-Arabic or non-English digits or decimal points from the input
+          const input = event.target.value.replace(/[^\u0660-\u0669\u06F0-\u06F90-9.,\s]+/g, '');
+          // Replace any Arabic decimal points with English decimal points
+          const inputWithEnglishDecimal = input.replace(/[\u066B]/g, '.');
+          // Update the input field with the cleaned input
+          event.target.value = inputWithEnglishDecimal;
+        });
+        
+        days.addEventListener('change', function(event) {
+          // Validate the input
+          const input = event.target.value;
+          if (!input || !/^[\u0660-\u0669\u06F0-\u06F90-9.,\s]+$/.test(input)) {
+            alert('Please enter a valid days');
+            event.target.value = '';
+            event.preventDefault();
+          }
+        });        
+      </script>     
     <!-- </html> -->
   </body>
 </html>
